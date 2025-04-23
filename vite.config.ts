@@ -5,11 +5,6 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   assetsInclude: ['**/*.png', '**/*.jpg', '**/*.svg'],
   plugins: [react()],
-  build: {
-    rollupOptions: {
-      external: [],
-    },
-  },
   resolve: {
     alias: {
       '@assets': path.resolve(__dirname, './src/assets'),

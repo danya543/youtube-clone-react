@@ -1,20 +1,16 @@
 {
   "name": "youtube-clone-react",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint --debug src/ --fix",
     "lint:fix": "eslint --debug src/ --fix",
-    "preview": "vite preview",
-    "prepare": "husky"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.15.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
