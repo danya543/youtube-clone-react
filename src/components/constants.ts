@@ -1,9 +1,15 @@
+import ChannelIcon from '@assets/channel_icon.png'
 import Cherry from '@assets/cherry.png'
 import Cone from '@assets/cone.png'
 import BurgerMenu from '@assets/icons/burger_menu.svg'
+import Dislikes from '@assets/icons/dislike.svg'
+import Likes from '@assets/icons/like.svg'
 import Logo from '@assets/icons/logo.svg'
 import Menu from '@assets/icons/menu.svg'
+import More from '@assets/icons/more.svg'
 import Notification from '@assets/icons/notification.svg'
+import Search from '@assets/icons/search.svg'
+import Share from '@assets/icons/share.svg'
 import Video from '@assets/icons/video.svg'
 import Orange from '@assets/orange.png'
 import Pineapple from '@assets/pineapple.png'
@@ -22,7 +28,13 @@ export const Images = {
     Notification: Notification,
     Menu: Menu,
     VideoIcon: Video,
-    Profile: Profile
+    Profile: Profile,
+    Likes: Likes,
+    Dislikes: Dislikes,
+    More: More,
+    Share: Share,
+    ChannelIcon: ChannelIcon,
+    Search: Search
 }
 
 export const CardsInfo: CardProps[] = [

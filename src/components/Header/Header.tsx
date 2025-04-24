@@ -1,19 +1,25 @@
 import { Images } from "@components/constants";
+import { Button } from "@ui/Button";
 import { Input } from "@ui/Input";
 
-
+import styles from './Header.module.scss'
 
 export const Header = () => {
-    const { BurgerMenu, Logo, VideoIcon, Menu, Notification, Profile } = Images;
+    const { BurgerMenu, Logo, VideoIcon, Menu, Notification, Profile, Search } = Images;
     return (
-        <header>
-            <button><img src={BurgerMenu} alt="menu" /></button>
-            <img src={Logo} alt="logo" />
-            <Input />
-            <div className="profile_settings">
+        <header className={styles.container}>
+            <div className={styles.logo_menu}>
+                <Button image={BurgerMenu} classname={styles.burger_menu} />
+                <img src={Logo} alt="logo" />
+            </div>
+            <div className={styles.search_input}>
+                <Input type={"text"} placeholder={"Search"} classname={""} />
+                <img src={Search} alt="" />
+            </div>
+            <div className={styles.profile_settings}>
                 <img src={VideoIcon} alt="" />
                 <img src={Menu} alt="" />
-                <div className="notification">
+                <div className={styles.notification}>
                     <img src={Notification} alt="" />
                     <p>3</p>
                 </div>
