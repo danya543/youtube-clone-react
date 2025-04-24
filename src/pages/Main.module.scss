@@ -1,7 +1,13 @@
 .container {
     width: 100%;
     box-sizing: border-box;
-    padding-right: 70px;
+    padding-right: 25px;
+}
+
+@media (min-width:1500px) {
+    .container {
+        padding-right: 70px;
+    }
 }
 
 .content {
