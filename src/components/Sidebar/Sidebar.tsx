@@ -9,7 +9,10 @@ export const Sidebar = () => {
         <aside>
             <div className={styles.header}>
                 <h3>Next</h3>
-                <p>Autoplay<Button /></p>
+                <div className={styles.autoplay}>
+                    <p>Autoplay</p>
+                    <Button />
+                </div>
             </div>
             {CardsInfo.map((item, index) => <Card author={item.author} views={item.views} img={item.img} header={item.header} duration={item.duration} key={index} />)}
         </aside>

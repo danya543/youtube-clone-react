@@ -11,6 +11,7 @@ export const Description = () => {
             <img src={ChannelIcon} alt="icon" />
             <h3>{name}</h3>
             <span>{date}</span>
+            <Button text={'Subscribe'} />
             <div className={styles.description}>
                 <p>{description}</p>
                 <Button text={'Show more'} />

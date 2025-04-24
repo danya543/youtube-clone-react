@@ -13,7 +13,7 @@
 
     img {
         width: 100%;
-        min-width: 250px;
+        min-width: 200px;
         max-width: 450px;
     }
 
@@ -35,4 +35,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (max-width:400px) {
+    .container {
+        h3 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
 }
