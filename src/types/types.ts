@@ -12,3 +12,8 @@ export interface ButtonProps {
     classname?: string;
     image?: string;
 }
+export interface InputProps {
+    type: 'password' | 'text',
+    placeholder?: string,
+    classname?: string
+}

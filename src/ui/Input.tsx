@@ -1,12 +1,11 @@
 
-import './ui.module.scss'
+import { InputProps } from '@src/types/types'
 
-export const Input = ({ type, placeholder, classname }: {
-    type: 'password' | 'text',
-    placeholder?: string,
-    classname?: string
-}) => {
+import styles from './ui.module.scss'
+
+export const Input = (props: InputProps) => {
+    const { type, placeholder, classname } = props;
     return (
-        <input type={type} placeholder={placeholder} className={classname} />
+        <input type={type} placeholder={placeholder} className={`${classname ? classname : ''} ${styles.button}`} />
     )
 }
