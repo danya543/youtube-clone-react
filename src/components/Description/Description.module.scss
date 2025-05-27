@@ -1,0 +1,86 @@
+.container {
+    margin-top: 40px;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        'icon header'
+        'icon date'
+        'icon description';
+    gap: 5px 12px;
+
+    >button {
+        display: none;
+    }
+
+    h3 {
+        grid-area: header;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    img {
+        grid-area: icon;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+    }
+
+    span {
+        grid-area: date;
+        font-size: 13px;
+        color: rgb(194, 194, 194);
+    }
+
+    .description {
+        grid-area: description;
+
+        p {
+            margin-top: 10px;
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 16px;
+        }
+
+        button {
+            font-size: 20px;
+            margin-top: 15px;
+            color: rgb(194, 194, 194);
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .description {
+        display: none;
+    }
+
+    .container {
+        grid-template-areas:
+            'icon header button'
+            'icon date button';
+        margin-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+
+        h3 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        button {
+            display: block;
+            font-size: 16px;
+            color: red;
+            grid-area: button;
+            align-self: center;
+        }
+    }
+
+}

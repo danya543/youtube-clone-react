@@ -1,0 +1,107 @@
+.header_info img {
+    display: none;
+}
+
+.container {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+
+    iframe {
+        width: 100%;
+        height: 60vh;
+        min-height: 500px;
+        max-height: 900px;
+        border-radius: 14px;
+    }
+
+    h3 {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .info {
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            'header header'
+            'views stats';
+        gap: 14px 0;
+
+        .header_info {
+            grid-area: header;
+        }
+
+        >p {
+            grid-area: views;
+            color: rgb(194, 194, 194);
+        }
+
+        .stats {
+            grid-area: stats;
+            justify-self: end;
+            width: 50%;
+            max-width: 500px;
+            min-width: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+            button {
+                border-radius: 20px;
+                background: rgba(235, 235, 235, 0.3);
+                font-size: 16px;
+                color: rgba(25, 38, 70, 1);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 8px;
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+
+    .container {
+        iframe {
+            height: 180px;
+            min-height: 0;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .header_info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .header_info img {
+            display: block;
+        }
+
+        .info {
+            grid-template-areas:
+                'header'
+                'views'
+                'stats';
+            ;
+            gap: 5px;
+
+            .stats {
+                margin-top: 15px;
+                width: 100%;
+                justify-self: start;
+
+                button:last-child {
+                    display: none;
+                }
+            }
+        }
+
+    }
+}
